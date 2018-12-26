@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3676108376992834394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2469583958500607438}
+  - component: {fileID: 1130486955380645242}
+  - component: {fileID: 8731093882928015806}
+  - component: {fileID: 2152781266883755811}
+  - component: {fileID: 2463217103443167301}
+  - component: {fileID: 3503380566011638477}
+  - component: {fileID: 4260602019232301846}
+  m_Layer: 0
+  m_Name: Kobold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2469583958500607438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_LocalRotation: {x: -0, y: -0, z: 0.2164396, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 843.24854, y: 192.24023}
+  m_SizeDelta: {x: 158, y: 258.6}
+  m_Pivot: {x: 0.4, y: 0.4}
+--- !u!114 &1130486955380645242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 722a41c4762a19d4a87aef92b6a909c0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!114 &8731093882928015806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a94cea55a53ab44d928c759f42a5b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyVisible: {fileID: 0}
+  levelManager: {fileID: 0}
+  tabManager: {fileID: 0}
+  enemyLoader: {fileID: 0}
+  health: {fileID: 0}
+  stats: {fileID: 0}
+  combatActivePoint: 725
+  test: 0
+  activeEnemy: 0
+  HPHeight: 400
+  HPXAlignment: 40
+  bossMonster: 0
+  tokenYOffset: 150
+  tokenXOffest: -100
+  dead: 0
+--- !u!114 &2152781266883755811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a93d16923816f4eb6cd19df28f3eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  currentHealth: 3
+  dexBase: 25
+  strBase: 1
+  intBase: 0
+  dexMod: 0
+  strMod: 0
+  intMod: 0
+  deathCount: 0
+  levelsBeaten: 0
+  movementSpeed: 1.5
+  worthMin: 2
+  worthMax: 4
+--- !u!114 &2463217103443167301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078194b31ac9a474880ca5b5993ce28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
+  stats: {fileID: 0}
+  rotating: 1
+  adventurer: 0
+  activeEnemy: 0
+  cycleSpeed: 8
+  time: 0
+  rotateMax: 35
+  rotateOffset: 0
+  rotateSpeed: 6
+  bounceMax: 50
+  baseY: 250
+--- !u!114 &3503380566011638477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e328c570a7f4794ab5df54bf6e2658a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
+  tabManager: {fileID: 0}
+  text: {fileID: 0}
+  timer: 0
+  timeBeforeDestroy: 2
+  xSpeedMax: 4
+  ySpeedMax: 3
+  rotateSpeedMax: 5
+  rotateSpeed: 0
+  rotateVelocity: 2
+  xSpeed: 0
+  ySpeed: 0
+  yDropSpeed: 0
+  yDropVelocity: 10
+  yDeleteAmount: 0
+  falling: 0
+  enemy: 1
+--- !u!222 &4260602019232301846
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676108376992834394}
+  m_CullTransparentMesh: 0
